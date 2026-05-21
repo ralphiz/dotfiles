@@ -13,3 +13,7 @@ alias dotfiles='cd ~/.dotfiles'
 alias zshrc='open ~/.dotfiles/.zshrc'
 alias aliases='open ~/.dotfiles/.zsh_aliases'
 alias reload='source ~/.zshrc && echo "✓ zshrc reloaded"'
+
+alias brewsave='brew bundle dump --force --file=~/.dotfiles/Brewfile'
+
+alias brewinstall='brew bundle install --file=~/.dotfiles/Brewfile'
