@@ -4,7 +4,7 @@ Personal macOS dotfiles for Ralph Cacho ([@ralphiz](https://github.com/ralphiz))
 
 ## Structure
 
-\`\`\`
+```
 ~/.dotfiles/
 ├── .zshrc              # Main zsh config, sources everything
 ├── .zsh_aliases        # Aliases
@@ -15,36 +15,36 @@ Personal macOS dotfiles for Ralph Cacho ([@ralphiz](https://github.com/ralphiz))
 ├── backups/            # Backed up original dotfiles
 └── config/
     └── starship.toml   # Starship prompt config
-\`\`\`
+```
 
 ## Fresh Machine Setup
 
-\`\`\`bash
+```bash
 git clone https://github.com/ralphiz/dotfiles ~/.dotfiles
 ~/.dotfiles/bootstrap.sh
-\`\`\`
+```
 
 This will:
 - Install Homebrew (if not installed)
-- Install all packages from \`Brewfile\`
+- Install all packages from `Brewfile`
 - Create symlinks for all dotfiles
 - Set zsh as the default shell
 
 ## Managing Packages
 
 Save current Homebrew packages:
-\`\`\`bash
+```bash
 brewsave
-\`\`\`
+```
 
 Restore packages on a new machine (handled by bootstrap):
-\`\`\`bash
+```bash
 brewinstall
-\`\`\`
+```
 
 ## Updating Dotfiles
 
 After making changes, reload your shell:
-\`\`\`bash
+```bash
 reload
-\`\`\`
+```
