@@ -1,0 +1,15 @@
+# ─── Navigation ────────────────────────────────────────────────────────────────
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ~='cd ~'
+
+# ─── Listing ───────────────────────────────────────────────────────────────────
+alias ll='ls -lah'
+alias la='ls -A'
+alias l='ls -CF'
+
+# ─── Dotfiles ──────────────────────────────────────────────────────────────────
+alias dotfiles='cd ~/.dotfiles'
+alias zshrc='open ~/.dotfiles/.zshrc'
+alias aliases='open ~/.dotfiles/.zsh_aliases'
+alias reload='source ~/.zshrc && echo "✓ zshrc reloaded"'

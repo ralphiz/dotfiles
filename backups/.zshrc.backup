@@ -1,0 +1,30 @@
+# ~/.zshrc
+
+# ─── History ───────────────────────────────────────────────────────────────────
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt HIST_IGNORE_DUPS      # Don't save duplicate commands
+setopt HIST_IGNORE_SPACE     # Don't save commands starting with a space
+setopt SHARE_HISTORY         # Share history across terminal sessions
+setopt HIST_VERIFY           # Show history expansion before running it
+
+# ─── Navigation ────────────────────────────────────────────────────────────────
+setopt AUTO_CD               # Type a directory name to cd into it
+setopt AUTO_PUSHD            # cd pushes to directory stack automatically
+setopt PUSHD_IGNORE_DUPS     # Don't push duplicates to the stack
+
+# ─── Completion ────────────────────────────────────────────────────────────────
+autoload -Uz compinit && compinit
+setopt ALWAYS_TO_END         # Move cursor to end after completion
+setopt AUTO_MENU             # Show completion menu on tab
+setopt COMPLETE_IN_WORD      # Complete from both ends of a word
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'  # Case-insensitive completion
+
+# ─── Aliases ───────────────────────────────────────────────────────────────────
+# Add yours here
+
+# ─── Path ──────────────────────────────────────────────────────────────────────
+# Add custom paths here, e.g.:
+# export PATH="$HOME/.local/bin:$PATH"
