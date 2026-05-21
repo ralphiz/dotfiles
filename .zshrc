@@ -26,3 +26,10 @@ setopt AUTO_MENU
 setopt COMPLETE_IN_WORD
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# ─── Plugins ───────────────────────────────────────────────────────────────────
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# ─── Prompt ────────────────────────────────────────────────────────────────────
+eval "$(starship init zsh)"

@@ -3,3 +3,5 @@ export EDITOR='nano'
 
 # ─── Path ──────────────────────────────────────────────────────────────────────
 # export PATH="$HOME/.local/bin:$PATH"
+
+export STARSHIP_CONFIG=~/.dotfiles/config/starship.toml
