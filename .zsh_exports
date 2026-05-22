@@ -2,6 +2,11 @@
 export EDITOR='nano'
 
 # ─── Path ──────────────────────────────────────────────────────────────────────
-# export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
+# ─── Starship ──────────────────────────────────────────────────────────────────
 export STARSHIP_CONFIG=~/.dotfiles/config/starship.toml
+
+# ─── NVM ───────────────────────────────────────────────────────────────────────
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && source "/opt/homebrew/opt/nvm/nvm.sh"

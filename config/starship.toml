@@ -18,12 +18,12 @@ $character"""
 [directory]
 truncation_length = 3
 truncate_to_repo = true
-style = "bold cyan"
+style = "bold blue"
 
 # ─── Git ───────────────────────────────────────────────────────────────────────
 [git_branch]
 symbol = " "
-style = "bold purple"
+style = "bold magenta"
 
 [git_status]
 ahead = "⇡${count}"
