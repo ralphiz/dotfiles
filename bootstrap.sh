@@ -38,6 +38,7 @@ symlink "$DOTFILES/.zsh_functions"   "$HOME/.zsh_functions"
 
 mkdir -p "$HOME/.config"
 symlink "$DOTFILES/config/starship.toml" "$HOME/.config/starship.toml"
+symlink "$DOTFILES/config/tmux.conf"    "$HOME/.tmux.conf"
 
 # ─── Default Shell ─────────────────────────────────────────────────────────────
 if [ "$SHELL" != "/bin/zsh" ]; then
