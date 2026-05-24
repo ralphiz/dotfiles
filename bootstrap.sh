@@ -40,6 +40,14 @@ mkdir -p "$HOME/.config"
 symlink "$DOTFILES/config/starship.toml" "$HOME/.config/starship.toml"
 symlink "$DOTFILES/config/tmux.conf"    "$HOME/.tmux.conf"
 
+# ─── TPM (Tmux Plugin Manager) ─────────────────────────────────────────────────
+if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+  echo "📦 Installing TPM..."
+  git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
+else
+  echo "✓ TPM already installed"
+fi
+
 # ─── Default Shell ─────────────────────────────────────────────────────────────
 if [ "$SHELL" != "/bin/zsh" ]; then
   echo "🐚 Setting zsh as default shell..."
