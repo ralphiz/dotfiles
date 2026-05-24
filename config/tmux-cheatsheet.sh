@@ -38,4 +38,4 @@ cat << 'EOF'
   [press any key to close]
 
 EOF
-read -rsk1 2>/dev/null || read -n1 -rs
+read -n 1 -s
