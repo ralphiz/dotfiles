@@ -31,5 +31,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# ─── GPG ───────────────────────────────────────────────────────────────────────
+export GPG_TTY=$(tty)
+
 # ─── Prompt ────────────────────────────────────────────────────────────────────
 eval "$(starship init zsh)"
