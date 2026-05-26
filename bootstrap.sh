@@ -39,6 +39,8 @@ symlink "$DOTFILES/.zsh_functions"   "$HOME/.zsh_functions"
 mkdir -p "$HOME/.config"
 symlink "$DOTFILES/config/starship.toml" "$HOME/.config/starship.toml"
 symlink "$DOTFILES/config/tmux.conf"    "$HOME/.tmux.conf"
+mkdir -p "$HOME/.config/karabiner"
+symlink "$DOTFILES/config/karabiner/karabiner.json" "$HOME/.config/karabiner/karabiner.json"
 
 # ─── TPM (Tmux Plugin Manager) ─────────────────────────────────────────────────
 if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
